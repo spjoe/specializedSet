@@ -15,7 +15,7 @@ Array is O(n)
 
 ## Installation
 
-    $ npm install 
+    $ npm install specialized-set
 
 ## Usage
 ```js
