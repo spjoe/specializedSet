@@ -1,6 +1,4 @@
-var SetFrameWork = require('../').SetFrameWork;
-var specializedSetFrameWork = new SetFrameWork(function(a, b) {return a == b}, function(a,b){return a < b});
-var Set = specializedSetFrameWork.Set;
+var Set = require('../')(function(a, b) {return a == b}, function(a,b){return a < b});
 
 describe('Set with various types', function () {
 	it('should not add same values twice', function () {
@@ -65,11 +63,10 @@ describe('Set with various types', function () {
 	it('should support intersect with a single value', function () {
 		var a = new Set(['a']);
 		var i = Set.intersect(a);
-		//should be false, intersect with empty(null) set should be empty
-		Set.equals(a, i).should.be.false;
+		Set.equals(a, i).should.be.true;
 		a.should.not.equal(i);
 		i = Set.intersect(undefined, a);
-		Set.equals(a, i).should.be.false;
+		Set.equals(a, i).should.be.true;
 		a.should.not.equal(i);
 	});
 	it('should support minus', function () {

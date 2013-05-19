@@ -1,6 +1,4 @@
-var SetFrameWork = require('../').SetFrameWork;
-var specializedSetFrameWork = new SetFrameWork(function(a, b) {return a == b}, function(a,b){return a < b});
-var Set = specializedSetFrameWork.Set;
+var Set = require('../')(function(a, b) {return a == b}, function(a,b){return a < b});
 
 describe('Set', function () {
 	it('should not add same values twice', function () {
