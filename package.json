@@ -2,7 +2,7 @@
   "name": "SpecializedSet",
   "description": "A performant flexible set",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["set", "binary tree"],
   "main": "./index",
   "maintainers": [
     "Camillo Dell'mour <cdellmour@gmail.com>"
@@ -19,6 +19,6 @@
   "scripts": {
     "test": "make test-coveralls"
   },
-  "repository": "git://github.com/spjoe/.git",
+  "repository": "git://github.com/spjoe/specializedSet.git",
   "license": "LGPLv3"
 }
