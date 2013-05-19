@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "SpecializedSet",
+  "description": "A performant flexible set",
   "version": "0.0.1",
   "keywords": [],
   "main": "./index",
