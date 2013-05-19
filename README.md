@@ -5,9 +5,9 @@
 [![Dependency Status](https://gemnasium.com/spjoe/specializedSet.png)](https://gemnasium.com/spjoe/)
 ## Introduction
 
-	Uses a binary tree for so you have a faster impl of a set when you don not ahve a has function for your objects. When you have hashes use Hashset!
+	Uses a binary tree for so you have a faster impl of a set when you don not have a hash function for your objects. When you have hashes use Hashset!
 
-	You have to define a complete lesser and equality fn. For example use toString();
+	You have to define a complete lesser and equality fn.
 
 ## Installation
 
@@ -15,12 +15,9 @@
 
 ## Usage
 ```js
-var SetFrameWork = require('../').SetFrameWork;
 var equalityFunction = function(a,b){return a == b};
 var lesserFunction = function(a,b){return a < b};
-
-var specializedSetFrameWork = new SetFrameWork(equalityFunction, lesserFunction);
-var Set = specializedSetFrameWork.Set;
+var Set = require('../')(equalityFunction, lesserFunction);
 
 var set1 = new Set(['a', 'd','c','c']);
 var set2 = new Set(['b','d','e']);
