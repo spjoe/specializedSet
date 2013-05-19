@@ -1,5 +1,5 @@
 {
-  "name": "SpecializedSet",
+  "name": "specialized-set",
   "description": "A performant flexible set",
   "version": "0.0.1",
   "keywords": ["set", "binary tree"],
